@@ -1,11 +1,13 @@
 package de.eldoria.century.calendar.parts;
 
 import de.eldoria.century.calendar.date.SimpleCenturyDate;
+import lombok.Getter;
 
+@Getter
 public class CenturySeason {
-	private SimpleCenturyDate start;
+	private final SimpleCenturyDate start;
 
-	private String name;
+	private final String name;
 
 	public CenturySeason(SimpleCenturyDate start, String name) {
 		this.start = start;

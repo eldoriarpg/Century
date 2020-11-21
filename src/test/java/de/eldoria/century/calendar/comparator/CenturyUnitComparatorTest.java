@@ -10,7 +10,7 @@ class CenturyUnitComparatorTest {
 
 	@Test
 	void compare() {
-		CenturyUnitComparator comparator = new CenturyUnitComparator(new CenturyCalendar());
+		CenturyUnitComparator comparator = new CenturyUnitComparator(CenturyCalendar.DEFAULT);
 
 		CenturyTimeUnit first = new CenturyDateTime(1, 1, 1, 1);
 		CenturyTimeUnit second = new CenturyDateTime(1, 1, 1, 2);

@@ -16,28 +16,28 @@ import java.util.Arrays;
 
 @Getter
 @Builder
-public class CenturyCalendar {
+public final class CenturyCalendar {
 	public static final CenturyCalendar DEFAULT = new CenturyCalendar();
-	private CalendarMeta meta;
+	private final CalendarMeta meta;
 
 	/**
 	 * Defines the seasons of this calendar.
 	 */
-	private CenturySeason[] seasons;
+	private final CenturySeason[] seasons;
 
 	/**
 	 * Defines the month of this calendar
 	 */
-	private CenturyMonth[] months;
+	private final CenturyMonth[] months;
 
 	/**
 	 * Defines a wee of this calendar.
 	 */
-	private CenturyWeek week;
+	private final CenturyWeek week;
 
-	private CenturyDay day;
+	private final CenturyDay day;
 
-	private UnitConverter converter;
+	private final UnitConverter converter;
 
 	private CenturyCalendar() {
 		meta = new CalendarMeta();

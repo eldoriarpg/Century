@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 
 class CenturyCalendarTest {
-	private static final CenturyCalendar CALENDAR = new CenturyCalendar();
+	private static final CenturyCalendar CALENDAR = CenturyCalendar.DEFAULT;
 
 	@Test
 	void getCurrentDate() {
@@ -29,6 +29,6 @@ class CenturyCalendarTest {
 
 	@Test
 	void getMonth() {
-		Assertions.assertTrue(CALENDAR.getMonth(1).getName().equalsIgnoreCase("January"));
+		Assertions.assertTrue("January".equalsIgnoreCase(CALENDAR.getMonth(1).getName()));
 	}
 }

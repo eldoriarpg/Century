@@ -38,5 +38,4 @@ public class CenturyDay {
 	 * The total time of a day in seconds.
 	 */
 	protected int dayCycleDuration = 3600;
-
 }

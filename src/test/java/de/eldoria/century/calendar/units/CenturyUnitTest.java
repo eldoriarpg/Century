@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CenturyUnitTest {
-	private static final CenturyCalendar CALENDAR = new CenturyCalendar();
+	private static final CenturyCalendar CALENDAR = CenturyCalendar.DEFAULT;
 	private static final int DAY_SECONDS = CALENDAR.getDay().getDayCycleDuration();
 	private final CenturyUnit first = new CenturyDateTime(1, 1, 1, 1);
 	private final CenturyUnit second = new CenturyDateTime(1, 1, 2, 0);

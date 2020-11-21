@@ -1,4 +1,4 @@
-### Planed features:
+### Planned features:
 
 #### Seasons
 - Change day night duration based on season.

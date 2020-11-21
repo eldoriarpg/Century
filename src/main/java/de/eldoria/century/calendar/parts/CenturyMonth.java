@@ -8,12 +8,12 @@ public class CenturyMonth {
 	/**
 	 * Days of this month.
 	 */
-	private int days;
+	private final int days;
 
 	/**
 	 * Name of Month
 	 */
-	private String name;
+	private final String name;
 
 	public CenturyMonth(int days, String name) {
 		this.days = days;
